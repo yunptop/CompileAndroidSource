@@ -50,7 +50,12 @@ Android手机 | Google Nexus 6
     ```
     wget -S -O - http://source.android.com/source/51-android.rules | sed "s/<username>/$USER/" | sudo tee >/dev/null /etc/udev/rules.d/51-android.rules; sudo udevadm control --reload-rules
     ```  
-    **注意：执行该命令需要翻墙**
+    **注意：执行该命令需要翻墙**  
+    
+    国内用户可执行如下命令   
+    ```shell
+    wget -S -O - http://yunpstatic.oss-cn-beijing.aliyuncs.com/res/android/source/51-android.txt | sed "s/<username>/$USER/" | sudo tee >/dev/null /etc/udev/rules.d/51-android.rules; sudo udevadm control --reload-rules
+    ```
     
 ## 安装并配置代码管理工具 repo
 
