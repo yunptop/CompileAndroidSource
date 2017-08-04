@@ -67,7 +67,12 @@ Android手机 | Google Nexus 6
     ``` 
     curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
     ```  
-   **注意：执行该命令需要翻墙**
+   **注意：执行该命令需要翻墙**  
+   
+   国内用户可以使用这条命令来执行  
+   ```shell
+   curl http://yunpstatic.oss-cn-beijing.aliyuncs.com/res/android/source/repo > ~/bin/repo
+   ```
 3. 通过如下命令给repo添加可执行权限  
     ``` 
     chmod a+x ~/bin/repo
